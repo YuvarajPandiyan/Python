@@ -16,3 +16,39 @@ for i in words:
         past_tense.append(t)
         
 print(past_tense)
+
+
+
+
+
+sentence = "students flock to the arb for a variety of outdoor activities such as jogging and picnicking"
+
+# Write your code here.
+a = sentence.split(" ")
+print(a)
+first=[]
+last=[]
+same_letter_count=()
+for i in a:
+    b = len(i)
+    c = b - 1
+    d = i[c]
+    last.append(d)
+for j in a:
+    v = len(j)
+    n = 0
+    m = j[n]
+    first.append(m)
+print(first)
+print(last)
+len_of_the_first=len(first)
+len_of_the_first -= 1
+print(len_of_the_first)
+len_of_the_last=len(last)
+len_of_the_last -= 1
+print(len_of_the_last)
+same_letter_count=0
+for first_1 in first:
+    qq = len_of_the_first
+    ww = len_of_the_last
+    pp = (first_1 in [len_of_the_first]
