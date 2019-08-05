@@ -1,0 +1,18 @@
+words = ["adopt", "bake", "beam", "confide", "grill", "plant", "time", "wave", "wish"]
+past_tense=[]
+for i in words:
+    l = len(i)
+    size = l - 1
+    if i[size] == "e":
+        b=i.join(" d")
+        r=b.replace(" ","")
+        print(r)
+        past_tense.append(r)
+    else:
+        c=i.join(" e")
+        u=c.join(" d")
+        t=u.replace("  ","")
+        print(t)
+        past_tense.append(t)
+        
+print(past_tense)
