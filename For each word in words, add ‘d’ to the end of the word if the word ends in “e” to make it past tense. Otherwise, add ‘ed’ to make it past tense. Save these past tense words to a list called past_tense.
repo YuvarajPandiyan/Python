@@ -17,10 +17,6 @@ for i in words:
         
 print(past_tense)
 
-
-
-
-
 sentence = "students flock to the arb for a variety of outdoor activities such as jogging and picnicking"
 
 # Write your code here.
@@ -28,7 +24,6 @@ a = sentence.split(" ")
 print(a)
 first=[]
 last=[]
-same_letter_count=()
 for i in a:
     b = len(i)
     c = b - 1
@@ -41,14 +36,27 @@ for j in a:
     first.append(m)
 print(first)
 print(last)
-len_of_the_first=len(first)
-len_of_the_first -= 1
-print(len_of_the_first)
-len_of_the_last=len(last)
-len_of_the_last -= 1
-print(len_of_the_last)
-same_letter_count=0
-for first_1 in first:
-    qq = len_of_the_first
-    ww = len_of_the_last
-    pp = (first_1 in [len_of_the_first]
+len_1 = len(first)
+len_1 -= 1
+print(len_1)
+len_2 = len(last)
+len_2 -= 1
+print(len_2)
+f = 1
+t = 0
+same_letter_count = 2
+print(first[0])
+for q in first:
+    #print(q)
+    t += 1
+    #print(t)
+    if f <= len_1:
+        print(q, first[f])
+        if q == first[f]:
+           
+            if last[t] == last[f]:
+                print(last[t], last[f])
+                same_letter_count += 1
+            
+print(same_letter_count)
+        
