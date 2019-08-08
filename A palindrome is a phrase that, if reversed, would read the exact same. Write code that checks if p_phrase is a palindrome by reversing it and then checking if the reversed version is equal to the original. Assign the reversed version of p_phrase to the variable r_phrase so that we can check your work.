@@ -1,11 +1,7 @@
 p_phrase = "was it a car or a cat I saw"
 lentofastr= len(p_phrase)
-print(lentofastr)
 lentofastr -= 1
-print(lentofastr)
-accum=0
 r_phrase=""
-print(p_phrase[26])
 for i in range(len(p_phrase)):
     r_phrase += p_phrase[lentofastr]
     lentofastr -= 1
